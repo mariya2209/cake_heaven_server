@@ -16,9 +16,10 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // or your frontend URL
+  origin: ['http://localhost:3000', 'https://cakeheaven.netlify.app/'],
   credentials: true,
 };
+
 app.use(cors(corsOptions));
 
 // Routes

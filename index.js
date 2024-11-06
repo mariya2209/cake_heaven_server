@@ -11,7 +11,7 @@ dotenv.config();
 // Initialize Express app
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3000'  // Allow this specific origin
+    origin: ['http://localhost:3000', 'https://cakeheaven.netlify.app'],  // Allow this specific origin
   }));
 // Middleware
 app.use(express.json());
